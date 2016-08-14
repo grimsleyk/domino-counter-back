@@ -1,5 +1,6 @@
 package com.alouette.dominocounter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -75,6 +76,16 @@ public class MainActivity extends AppCompatActivity
         this.total += increment;
     }
 
+    public void clearSubtotal(View view)
+    {
+        // Reset domino view
+        this.leftDominoView.setText("_");
+        this.rightDominoView.setText("_");
+        // Rest values
+        setLeftSubTotal(-1);
+        setRightSubTotal(-1);
+    }
+
     public void updateSubTotal(int subTotal)
     {
         // Updates the subtotal value with the slected left or right domino
@@ -92,7 +103,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    public void uptateTotal()
+    public void updateTotal(View view)
     {
         // Updates the total score with the left and right values
         // Add to totals
@@ -102,14 +113,13 @@ public class MainActivity extends AppCompatActivity
         clearSubtotal(null);
     }
 
-    public void clearSubtotal(View view)
+    public void showTotal(View view)
     {
-        // Reset domino view
-        this.leftDominoView.setText("_");
-        this.rightDominoView.setText("_");
-        // Rest values
-        setLeftSubTotal(-1);
-        setRightSubTotal(-1);
+        // Show the score page with the total score
+        Intent intent = new Intent(this, ResultsActivity.class);
+        String message = String.valueOf(getTotal());
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     // Private Methods
