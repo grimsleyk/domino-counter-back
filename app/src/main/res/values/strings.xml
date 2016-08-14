@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Domino Counter</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+
+    <!--Buttons-->
+    <string name="next">Next</string>
+    <string name="total">Total</string>
+
+    <!--TODO: These should temorary, remove when not needed-->
+    <!--Domino button Strings-->
+    <string name="domino_zero">0</string>
+    <string name="domino_one">1</string>
+    <string name="domino_two">2</string>
+    <string name="domino_three">3</string>
+    <string name="domino_four">4</string>
+    <string name="domino_five">5</string>
+    <string name="domino_six">6</string>
+    <string name="domino_seven">7</string>
+    <string name="domino_eight">8</string>
+    <string name="domino_nine">9</string>
+    <string name="domino_ten">10</string>
+    <string name="domino_eleven">11</string>
+    <string name="domino_twelve">12</string>
+</resources>
