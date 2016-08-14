@@ -32,12 +32,9 @@ public class MainActivity extends AppCompatActivity
         initiateButtons();
 
         // Set left and right domino values
-        setLeftSubTotal(-1);
-        setRightSubTotal(-1);
         this.leftDominoView = (TextView)findViewById(R.id.sub_domino_left);
-        this.leftDominoView.setText("-1");
         this.rightDominoView = (TextView)findViewById(R.id.sub_domino_right);
-        this.rightDominoView.setText("-1");
+        clearSubtotal(null);
     }
 
     // Getters and Setters
@@ -102,8 +99,17 @@ public class MainActivity extends AppCompatActivity
         addToTotal(getLeftSubTotal() + getRightSubTotal());
 
         // Clear subtotals
-        setLeftSubTotal(0);
-        setRightSubTotal(0);
+        clearSubtotal(null);
+    }
+
+    public void clearSubtotal(View view)
+    {
+        // Reset domino view
+        this.leftDominoView.setText("_");
+        this.rightDominoView.setText("_");
+        // Rest values
+        setLeftSubTotal(-1);
+        setRightSubTotal(-1);
     }
 
     // Private Methods
