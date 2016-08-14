@@ -18,7 +18,6 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:weightSum="10">
-            android:weightSum="10">
 
             <Button android:id="@+id/domino_zero"
                 android:layout_width="wrap_content"
@@ -38,17 +37,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/domino_one"
                 android:layout_centerHorizontal="true"/>
-            <Button
+            <Button android:id="@+id/domino_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/domino_two"
-                android:onClick="addSubTotal"
                 android:layout_centerHorizontal="true"/>
-            <Button
+            <Button android:id="@+id/domino_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/domino_three"
-                android:onClick="addSubTotal"
                 android:layout_centerHorizontal="true"/>
 
         </TableRow>
@@ -59,21 +56,18 @@
             android:gravity="center"
             android:weightSum="10">
 
-            <Button
+            <Button android:id="@+id/domino_four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_four"
-                android:onClick="addSubTotal"/>
-            <Button
+                android:text="@string/domino_four"/>
+            <Button android:id="@+id/domino_five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_five"
-                android:onClick="addSubTotal"/>
-            <Button
+                android:text="@string/domino_five"/>
+            <Button android:id="@+id/domino_six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_six"
-                android:onClick="addSubTotal"/>
+                android:text="@string/domino_six"/>
 
         </TableRow>
 
@@ -83,21 +77,18 @@
             android:gravity="center"
             android:weightSum="10">
 
-            <Button
+            <Button android:id="@+id/domino_seven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_seven"
-                android:onClick="addSubTotal"/>
-            <Button
+                android:text="@string/domino_seven"/>
+            <Button android:id="@+id/domino_eight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_eight"
-                android:onClick="addSubTotal"/>
-            <Button
+                android:text="@string/domino_eight"/>
+            <Button android:id="@+id/domino_nine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_nine"
-                android:onClick="addSubTotal"/>
+                android:text="@string/domino_nine"/>
 
         </TableRow>
 
@@ -107,21 +98,18 @@
             android:gravity="center"
             android:weightSum="10">
 
-            <Button
+            <Button android:id="@+id/domino_ten"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_ten"
-                android:onClick="addSubTotal"/>
-            <Button
+                android:text="@string/domino_ten"/>
+            <Button android:id="@+id/domino_eleven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_eleven"
-                android:onClick="addSubTotal"/>
-            <Button
+                android:text="@string/domino_eleven"/>
+            <Button android:id="@+id/domino_twelve"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/domino_twelve"
-            android:onClick="addSubTotal"/>
+                android:text="@string/domino_twelve"/>
 
         </TableRow>
 
@@ -164,9 +152,6 @@
             android:onClick="showTotal"/>
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>
 
