@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity
         clearSubtotal(null);
     }
 
+
     // Getters and Setters
     public int getTotal()
     {
@@ -118,6 +119,8 @@ public class MainActivity extends AppCompatActivity
         // Show the score page with the total score
         Intent intent = new Intent(this, ResultsActivity.class);
         String message = String.valueOf(getTotal());
+        setTotal(0);
+        clearSubtotal(null);
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
